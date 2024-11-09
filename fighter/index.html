@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fighter Plane vs UFOs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="main-menu">
+        <h1>Fighter Plane vs UFOs</h1>
+        <div id="difficulty-options">
+            <button onclick="setDifficulty('easy')">Easy</button>
+            <button onclick="setDifficulty('medium')" style="background-color: #0066cc;">Medium</button>
+            <button onclick="setDifficulty('hard')">Hard</button>
+        </div>
+        <button id="start-button" onclick="startGame()">Start Game</button>
+    </div>
+
+    <div id="game-container" style="display: none;">
+        <div id="fighter-plane"></div>
+        <div id="score">Score: 0</div>
+        <div id="lives">Lives: 3</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
