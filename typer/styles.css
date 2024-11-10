@@ -1,0 +1,86 @@
+/* Word display styling */
+#word-display {
+    font-size: 30px;
+    color: #ffa07a; /* Light salmon color */
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+/* Input box styling */
+#input-box {
+    width: 80%;
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid #ff69b4;
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Scoreboard and timer styling */
+#score, #wpm, #time-left {
+    font-size: 18px;
+    color: #ff69b4; /* Light pink text */
+    margin: 10px 0;
+    padding: 8px 0;
+}
+
+/* Stats container */
+#stats {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    color: #20b2aa; /* Light sea green */
+}
+
+/* Game over screen */
+#game-over {
+    font-size: 22px;
+    color: #ff6347; /* Tomato color */
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Game over final score and WPM display */
+#final-score, #final-wpm {
+    font-size: 20px;
+    color: #4682b4; /* Steel blue color */
+}
+
+/* Buttons styling */
+button {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff1493; /* Deeper pink */
+}
+
+/* Timer display */
+#time-left {
+    font-weight: bold;
+    color: #ff6347; /* Tomato color */
+}
+
+/* Final score display after game over */
+#final-score, #final-wpm {
+    font-size: 22px;
+    color: #4682b4; /* Steel blue */
+}
+
+/* Cute pastel colors for score and WPM */
+#score, #wpm {
+    color: #ff69b4; /* Light pink */
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}

@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: url('https://example.com/aesthetic-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    overflow: hidden;
+  }
+  
+  .game-container {
+    text-align: center;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.8); /* Soft white background */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    color: #333;
+    transition: all 0.3s ease;
+  }
+  
+  .game-container:hover {
+    transform: scale(1.05); /* Slight zoom effect when hovering */
+  }
+  
+  h1 {
+    color: #ff69b4;  /* Light pink color */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .score-timer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+  }
+  
+  .question-container {
+    margin: 20px 0;
+  }
+  
+  input[type="number"] {
+    font-size: 1.2em;
+    padding: 10px;
+    width: 75%;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 2px solid #ff69b4;
+    transition: all 0.3s ease;
+  }
+  
+  input[type="number"]:focus {
+    border-color: #ff1493;  /* Focus effect with a darker pink */
+    outline: none;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    background-color: #ff69b4;
+    color: white;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ff1493;  /* Darker pink on hover */
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .correct {
+    color: green;
+    font-size: 1.1em;
+  }
+  
+  .incorrect {
+    color: red;
+    font-size: 1.1em;
+  }
+  
+  #submitBtn {
+    margin-top: 10px;
+  }
+  
+  #startBtn {
+    padding: 12px 25px;
+    font-size: 1.3em;
+    background-color: #ff1493;
+    color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  #startBtn:hover {
+    background-color: #ff69b4;
+  }
+  
+  #time {
+    font-size: 1.5em;
+    color: #ff1493; /* Timer color */
+  }
+  
+  #score {
+    font-size: 1.5em;
+    color: #ff6347; /* Score color */
+  }
+  
+  .progress-bar {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    height: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  #progress {
+    height: 100%;
+    background-color: #ff69b4;
+  }
+  
+  @keyframes bounce {
+    0% { transform: translateY(0); }
+    25% { transform: translateY(-5px); }
+    50% { transform: translateY(0); }
+    75% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+  }
+  
+  .bounce {
+    animation: bounce 0.5s ease;
+  }

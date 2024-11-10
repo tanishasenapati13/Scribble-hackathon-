@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Typing Speed Challenge</h1>
+        <div id="start-screen">
+            <button id="start-button" onclick="startGame()">Start Game</button>
+        </div>
+        <div id="stats" class="hidden">
+            <span id="score">Score: 0</span>
+            <span id="wpm">WPM: 0</span>
+            <span id="time-left">Time Left: 60s</span>
+        </div>
+        <div id="word-display" class="hidden"></div>
+        <input type="text" id="input-box" placeholder="Type here..." class="hidden" autofocus>
+        <div id="game-over" class="hidden">
+            <h2>Game Over!</h2>
+            <p>Your Score: <span id="final-score">0</span></p>
+            <p>Your WPM: <span id="final-wpm">0</span></p>
+            <button onclick="startGame()">Play Again</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
