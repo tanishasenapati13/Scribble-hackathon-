@@ -4,17 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Home Page</title>
-    <link rel="stylesheet" href="styles.css">  
- </head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        .container {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            margin-bottom: 20px;
+        }
+        
+        button {
+            background-color: #04101c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+            font-size: 16px;
+        }
+        
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <script>
+        function startGame(game) {
+            switch (game) {
+                case 'memoryMatch':
+                    window.location.href = 'memory/index.html'; // Path to Memory Match game
+                    break;
+                case 'fighterUFO':
+                    window.location.href = 'fighter/index.html'; // Path to Fighter UFO game
+                    break;
+                default:
+                    console.error('Game not found!');
+            }
+        }
+    </script>
+</head>
 <body>
     <div class="container">
         <h1>Welcome to the Game Hub</h1>
-        <button onclick="startGame('memoryMatch')">Memory Match</button>
-        <button onclick="startGame('fighterUFO')">Fighter UFO</button>
+        <button onclick="startGame('memoryMatch')"><a href="https://tanishasenapati13.github.io/Scribble-hackathon-/memory/index.html">Memory Match</a></button>
+        <button onclick="startGame('fighterUFO')"><a href="https://github.com/tanishasenapati13/Scribble-hackathon-/tree/main/fighter"></a>Fighter UFO</button>
+		  <button onclick="startGame('mathquiz')"><a href="https://github.com/tanishasenapati13/Scribble-hackathon-/tree/main/mathquiz"></a>Math Quiz</button>
+			<button onclick="startGame('surprise!')"><a href="https://github.com/tanishasenapati13/Scribble-hackathon-/tree/main/surprise!"></a>Surprise!</button>
+			  <button onclick="startGame('typer')"><a href="https://github.com/tanishasenapati13/Scribble-hackathon-/tree/main/typer"></a>Typing Speed</button>
+				<button onclick="startGame('whackamole')"><a href="https://github.com/tanishasenapati13/Scribble-hackathon-/tree/main/whack-a-mole"></a>Whack-a-mole</button>
     </div>
-
-    <script src="script.js"></script>  
+<script>
+		  function startGame(game) {
+    switch (game) {
+        case 'memoryMatch':
+            window.location.href = 'memory/index.html'; // Path to Memory Match game
+            break;
+        case 'fighterUFO':
+            window.location.href = 'fighter/index.html'; // Path to Fighter UFO game
+            break;
+        default:
+            console.error('Game not found!');
+    }
+  }
+  
+  
+		  
+		  </script>
 </body>
 </html>
-
 
