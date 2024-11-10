@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa;
+    background-color: #f0f2f5;
     color: #333;
     display: flex;
     justify-content: center;
@@ -8,39 +8,63 @@ body {
     flex-direction: column;
     height: 100vh;
     margin: 0;
+    padding: 20px;
 }
 
 .container {
     text-align: center;
+    background-color: #ffffff;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
 }
 
 input {
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+    border-color: #ff6f61;
+    box-shadow: 0 0 5px rgba(255, 111, 97, 0.5);
+    outline: none;
 }
 
 button {
-    padding: 10px 20px;
+    padding: 10px 25px;
     border-radius: 5px;
     border: none;
     background-color: #ff6f61;
     color: white;
     cursor: pointer;
     margin: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 button:hover {
     background-color: #ff4f3d;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(1);
 }
 
 .game-board {
     display: grid;
     gap: 10px;
     margin: 20px auto;
-    justify-content: center; /* Centers the grid horizontally */
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
 }
+
 .card {
     width: 80px;
     height: 80px;
@@ -51,27 +75,46 @@ button:hover {
     align-items: center;
     font-size: 2em;
     cursor: pointer;
-    transition: transform 0.3s;
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .card.flipped {
     transform: rotateY(180deg);
-    background-color: #fff;
+    background-color: #ffffff;
+    color: #333;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
 }
 
 .card.matched {
     background-color: #90ee90;
     pointer-events: none;
+    box-shadow: none;
 }
 
 #level-display, #timer, #message {
     margin: 10px 0;
+    font-size: 1.2em;
+    color: #666;
+}
+
+#leaderboard {
+    display: none;
+    margin-top: 15px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
 }
 
 #leaderboard-list {
     list-style-type: none;
     padding: 0;
 }
-#leaderboard {
-    display: none; /* Initially hide the leaderboard */
+
+#leaderboard-list li {
+    background: #f8f9fa;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #555;
 }
